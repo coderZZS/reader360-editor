@@ -67,7 +67,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "dev": "node scripts/start.js",
+    "start": "node scripts/start.js",
+    "prestart": "node ./_check_env.js && npm run start",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
@@ -147,9 +148,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "colors": "^1.4.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "node-version": "^3.0.0",
     "postcss": "^8.4.21",
     "prettier-eslint": "^15.0.1",
     "sass": "^1.61.0",
