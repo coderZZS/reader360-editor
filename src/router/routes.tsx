@@ -5,23 +5,32 @@ const Main = lazy(() => import('@/views/main/index.tsx'))
 const Editor = lazy(() => import('@/views/editor/index.tsx'))
 const Home = lazy(() => import('@/views/home/index.tsx'))
 
-const customRoutes: CustomRoute[] = [
-    {
-        path: 'home',
-        id: 'home',
-        element: <Home />,
-        meta: {
-            name: 'xxx',
-        },
-    },
-    {
-        path: 'editor',
-        id: 'editor',
-        element: <Editor />,
-    },
-]
+type CustomRoutesTypes = 'customMainRoutes' | 'customCommonRoutes'
 
-export const mainRoutes: Array<RouteObject> = transitionCustomRouteToRouteObject(customRoutes)
+type CustomRoutes = {
+    [k in CustomRoutesTypes]: CustomRoute[]
+}
+
+export const customRoutes: CustomRoutes = {
+    customMainRoutes: [
+        {
+            path: 'home',
+            id: 'home',
+            element: <Home />,
+            meta: {
+                name: 'xxx',
+            },
+        },
+        {
+            path: 'editor',
+            id: 'editor',
+            element: <Editor />,
+        },
+    ],
+    customCommonRoutes: [],
+}
+
+export const mainRoutes: Array<RouteObject> = transitionCustomRouteToRouteObject(customRoutes.customMainRoutes)
 
 export const routes: Array<RouteObject> = [
     {
