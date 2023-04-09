@@ -1,9 +1,7 @@
-const Home = () => {
-  return (
-    <div>
-      <b>首页</b>
-    </div>
-  );
-};
+import './index.scss'
 
-export default Home;
+const Home = () => {
+    return <div className="home">home</div>
+}
+
+export default Home
