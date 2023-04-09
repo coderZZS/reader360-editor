@@ -1,0 +1,9 @@
+@include b(editor-header) {
+    @apply w-[100%] h-[60px] flex justify-between bg-gray-700 text-white;
+    @include e(left) {
+        @apply h-[100%] w-[200px] flex ml-5 text-[26px] items-center;
+    }
+    @include e(right) {
+        @apply h-[100%] w-[240px] flex justify-between items-center mr-5;
+    }
+}

@@ -1,0 +1,8 @@
+@include b(editor) {
+    @apply w-[100%] h-[100%] flex flex-col;
+}
+:global {
+    .ant-drawer-body {
+        padding: 0 !important;
+    }
+}
