@@ -1,9 +1,10 @@
 import { Button } from 'antd'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import './index.scss'
 
 const Editor = () => {
     const navigate = useNavigate()
+
     return (
         <div className="editor">
             <span>编辑器</span>

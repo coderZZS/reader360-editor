@@ -1,3 +1,6 @@
 @include b(home) {
-    @apply w-[100%] h-[100%] bg-abs;
+    @apply w-[100%] h-[100%];
+    @include b(hello) {
+        @apply w-[50px] h-[50px] rounded-[5px] bg-abs;
+    }
 }

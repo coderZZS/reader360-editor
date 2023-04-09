@@ -1,12 +1,19 @@
 import './index.scss'
-import { useRoutes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { mainRoutes } from '@/router/routes'
-import Header from '@/components/Header'
+import { Outlet } from 'react-router-dom'
 
 const Home = () => {
-    const curRouter = useRoutes(mainRoutes)
-
-    return <div className="home">{curRouter}</div>
+    const location = useLocation()
+    useEffect(() => {
+        return
+    }, [location.pathname])
+    return (
+        <div className="home">
+            <Outlet />
+        </div>
+    )
 }
 
 export default Home
