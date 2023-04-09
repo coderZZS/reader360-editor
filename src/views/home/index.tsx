@@ -1,7 +1,10 @@
-import './index.scss'
+import React from 'react'
 
 const Home = () => {
-    return <div className="home">home</div>
+    return (
+        <div className="home">
+            <span>首页</span>
+        </div>
+    )
 }
-
 export default Home

@@ -1,4 +1,3 @@
 @include b(home) {
-    width: 100%;
-    background-color: $color-primary;
+    @apply w-[100%] h-[100%] bg-abs;
 }
