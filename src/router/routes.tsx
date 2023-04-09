@@ -6,11 +6,13 @@ const Home = lazy(() => import('@/views/home/index.tsx'))
 
 export const mainRoutes: Array<RouteObject> = [
     {
-        path: '/home',
+        path: 'home',
+        id: 'home',
         element: <Home />,
     },
     {
-        path: '/editor',
+        path: 'editor',
+        id: 'editor',
         element: <Editor />,
     },
 ]

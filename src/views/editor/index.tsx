@@ -1,8 +1,15 @@
+import { Button } from 'antd'
+import { useNavigate } from 'react-router-dom'
+import './index.scss'
+
 const Editor = () => {
+    const navigate = useNavigate()
     return (
-        <div>
+        <div className="editor">
             <span>编辑器</span>
-            <micro-app name="react360-test" url="http://127.0.0.1:8080" baseroute="/"></micro-app>
+            <Button size="small" onClick={() => navigate('/home')}>
+                点击
+            </Button>
         </div>
     )
 }
