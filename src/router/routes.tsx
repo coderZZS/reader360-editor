@@ -3,6 +3,7 @@ import { lazy } from 'react'
 const Main = lazy(() => import('@/views/main/index.tsx'))
 const Editor = lazy(() => import('@/views/editor/index.tsx'))
 const Home = lazy(() => import('@/views/home/index.tsx'))
+const Threejs = lazy(() => import('@/views/threejs/index.tsx'))
 
 export const mainRoutes: Array<RouteObject> = [
     {
@@ -14,6 +15,10 @@ export const mainRoutes: Array<RouteObject> = [
         path: 'editor',
         id: 'editor',
         element: <Editor />,
+    },
+    {
+        path: '/Threejs',
+        element: <Threejs />,
     },
 ]
 
