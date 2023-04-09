@@ -1,6 +1,7 @@
 import { RouteObject } from 'react-router-dom'
 interface CustomMeta {
     name?: string
+    title?: string
 }
 
 interface CustomRouteObject {
