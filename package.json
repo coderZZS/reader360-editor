@@ -15,6 +15,7 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "antd": "^5.4.0",
+    "axios": "^1.3.5",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -68,7 +69,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "prestart": "node ./_check_env.js && npm run start",
+    "prestart": "node ./_check_env.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
