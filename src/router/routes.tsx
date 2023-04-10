@@ -3,6 +3,7 @@ import { lazy } from 'react'
 const Main = lazy(() => import('@/views/main/index.tsx'))
 const Editor = lazy(() => import('@/views/editor/index.tsx'))
 const Home = lazy(() => import('@/views/home/index.tsx'))
+const Login = lazy(() => import('@/views/login/index.tsx'))
 
 export const mainRoutes: Array<RouteObject> = [
     {
@@ -12,6 +13,10 @@ export const mainRoutes: Array<RouteObject> = [
     {
         path: '/editor',
         element: <Editor />,
+    },
+    {
+        path: '/login',
+        element: <Login />,
     },
 ]
 
