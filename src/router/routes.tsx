@@ -4,6 +4,7 @@ import { transitionCustomRouteToRouteObject, CustomRoute } from './utils'
 const Main = lazy(() => import('@/views/main/index.tsx'))
 const Editor = lazy(() => import('@/views/editor/index.tsx'))
 const Home = lazy(() => import('@/views/home/index.tsx'))
+const Login = lazy(() => import('@/views/login/index.tsx'))
 
 type CustomRoutesTypes = 'customMainRoutes' | 'customCommonRoutes'
 
