@@ -15,6 +15,7 @@ module.exports = {
     extends: ['plugin:json/recommended', 'plugin:prettier/recommended', 'prettier'],
     plugins: ['@typescript-eslint'],
     parserOptions: {
+        sourceType: 'module',
         parser: ['@typescript-eslint/parser'], // 解析 .ts 文件
     },
     rules: {},

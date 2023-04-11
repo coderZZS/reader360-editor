@@ -5,6 +5,7 @@ const Main = lazy(() => import('@/views/main/index.tsx'))
 const Editor = lazy(() => import('@/views/editor/index.tsx'))
 const Home = lazy(() => import('@/views/home/index.tsx'))
 const Login = lazy(() => import('@/views/login/index.tsx'))
+const Threejs = lazy(() => import('@/views/threejs/index.tsx'))
 
 type CustomRoutesTypes = 'customMainRoutes' | 'customCommonRoutes'
 
@@ -26,6 +27,14 @@ export const customRoutes: CustomRoutes = {
             path: 'editor',
             id: 'editor',
             element: <Editor />,
+        },
+        {
+            path: '/login',
+            element: <Login />,
+        },
+        {
+            path: '/three',
+            element: <Threejs />,
         },
     ],
     customCommonRoutes: [],
