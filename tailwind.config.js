@@ -9,8 +9,7 @@ module.exports = {
             },
         },
         colors: {
-            abs: 'pink',
-            fontAbs: '#1a1a1a',
+            abs: '#1a1a1a',
             pur: 'purple',
         },
         boxShadow: {

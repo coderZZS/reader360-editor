@@ -10,7 +10,7 @@ const Home = () => {
         return
     }, [location.pathname])
     return (
-        <div className="home">
+        <div className="main">
             <Outlet />
         </div>
     )
