@@ -1,6 +1,8 @@
 @include b(home) {
     @apply w-[100%] h-[100%];
-    @include b(hello) {
-        @apply w-[50px] h-[50px] rounded-[5px];
+    @include e(content) {
+        @apply p-[20px];
+        @include m(table) {
+        }
     }
 }

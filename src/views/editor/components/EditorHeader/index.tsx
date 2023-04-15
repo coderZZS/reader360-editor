@@ -12,7 +12,7 @@ export default () => {
                 <Button type="dashed" ghost>
                     保存
                 </Button>
-                <Button type="dashed" ghost>
+                <Button type="primary" ghost>
                     发布
                 </Button>
             </div>

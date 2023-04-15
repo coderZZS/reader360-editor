@@ -1,22 +1,22 @@
-@include b (login) {
+@include b(login) {
     @apply w-[100%] h-[100%] bg-login-bg flex justify-center items-center;
-    @include e (dialog) {
+    @include e(dialog) {
         @apply w-[1000px] h-[540px] flex items-center relative;
-        @include m (left) {
+        @include m(left) {
             @apply w-[550px] h-[100%] flex items-center absolute overflow-hidden rounded-[15px];
-            @include b (fill) {
+            @include b(fill) {
                 @apply flex-1 h-[100%] bg-[#1A2D42];
             }
-            @include b (ellipse) {
+            @include b(ellipse) {
                 @apply w-[500px] h-[600px] bg-[#1A2D42] rounded-tr-[100%] rounded-br-[100%] shadow-myy;
             }
         }
-        @include m (right) {
+        @include m(right) {
             @apply w-[100%] h-[80%] bg-[#fff] rounded-[15px];
-            @include b (form) {
+            @include b(form) {
                 @apply w-[500px] h-[80%] absolute right-0 flex justify-center mt-[200px];
-                @include e (dl) {
-                    @apply bg-abs
+                @include e(dl) {
+                    @apply bg-abs;
                 }
             }
         }

@@ -24,7 +24,7 @@ export const customRoutes: CustomRoutes = {
             },
         },
         {
-            path: 'editor',
+            path: 'editor/:id',
             id: 'editor',
             element: <Editor />,
         },

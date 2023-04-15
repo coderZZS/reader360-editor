@@ -1,7 +1,6 @@
 import React from 'react'
 import { router } from './router'
 import { RouterProvider } from 'react-router-dom'
-import 'antd/dist/reset.css'
 
 function App() {
     return (

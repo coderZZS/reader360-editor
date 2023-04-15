@@ -27,4 +27,10 @@ module.exports = {
     },
     plugins: [],
     dark: 'class',
+    variant: {
+        top: ['group-hover'],
+    },
+    corePlugins: {
+        preflight: false,
+    },
 }

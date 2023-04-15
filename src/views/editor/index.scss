@@ -1,3 +1,6 @@
 @include b(editor) {
-    @apply w-[100%] h-[100%] flex flex-col bg-[pink];
+    @apply w-[100%] h-[100%] flex flex-col;
+    @include e(content) {
+        @apply mt-[60px];
+    }
 }
