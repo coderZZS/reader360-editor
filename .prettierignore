@@ -1,0 +1,10 @@
+**/*.png
+**/*.svg
+fonts/
+package.json
+.gitignore
+.eslintcache
+.prettierignore
+*.fbx
+*.txt
+public/

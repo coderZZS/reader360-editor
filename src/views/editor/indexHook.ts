@@ -1,4 +1,4 @@
-import { CustomScene as Scene } from '@/three-utils/model-sdk'
+import { CustomScene as Scene } from '@/three-utils/three-sdk'
 import * as three from 'three'
 import type { Mesh } from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'

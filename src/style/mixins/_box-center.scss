@@ -3,28 +3,28 @@
 /// @param  {[string]} $align      [center] 垂直对齐方向,[false] 垂直方向不设置
 /// @example
 /// //SCSS
-/// 
+///
 /// .justify-center {
 ///     @include box-center;
 /// }
-/// 
+///
 /// //CSS
-/// 
+///
 /// .justify-cnter {
 ///     display: flex;
 ///     justify-content: center;
 ///     align-items: center;
 /// }
-/// 
+///
 /// @author 大漠
 
-@mixin box-center($justify:center, $align: center) {
-    display:flex;
+@mixin box-center($justify: center, $align: center) {
+    display: flex;
 
-    @if($align !=false) {
+    @if ($align !=false) {
         align-items: $align;
     }
-    @if($justify !=false) {
+    @if ($justify !=false) {
         justify-content: $justify;
     }
 }
@@ -49,14 +49,11 @@
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
-    }
-    @else if $direction == horizontal {
+    } @else if $direction == horizontal {
         left: 50%;
         transform: translate3d(-50%, 0, 0);
-    }
-    @else if $direction == vertical {
+    } @else if $direction == vertical {
         top: 50%;
         transform: translate3d(0, -50%, 0);
     }
 }
-

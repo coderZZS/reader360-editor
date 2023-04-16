@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import type { ColumnsType } from 'antd/es/table'
+import React, { useState } from 'react'
+import { ColumnsType } from 'antd/es/table'
 import { Button, Space } from 'antd'
 import { useNavigate } from 'react-router-dom'
 

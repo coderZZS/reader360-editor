@@ -1,7 +1,8 @@
+import React from 'react'
 import { Button } from 'antd'
 import './index.scss'
 
-export default () => {
+export default function EditorHeader() {
     return (
         <div className="editor-header">
             <div className="editor-header__left">作品标题...</div>

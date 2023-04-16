@@ -101,14 +101,14 @@ $modifierSeparator: '--';
         $block: getBlock($selector);
         @at-root {
             #{$selector} {
-                #{$block+$elementSeparator+$element} {
+                #{$block + $elementSeparator + $element} {
                     @content;
                 }
             }
         }
     } @else {
         @at-root {
-            #{$selector+$elementSeparator+$element} {
+            #{$selector + $elementSeparator + $element} {
                 @content;
             }
         }
@@ -141,9 +141,8 @@ $modifierSeparator: '--';
 ///  }
 @mixin m($modifier) {
     @at-root {
-        #{&}#{$modifierSeparator+$modifier} {
+        #{&}#{$modifierSeparator + $modifier} {
             @content;
         }
     }
 }
-

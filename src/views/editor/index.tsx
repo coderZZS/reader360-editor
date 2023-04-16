@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { Drawer } from 'antd'
 import EditorHeader from './components/EditorHeader'
+import React, { useEffect, useRef, useState } from 'react'
+import { useScene } from './indexHook'
+import { CustomScene } from '../../three-utils/three-sdk/index'
 import './index.scss'
 import '@/style/resets/index.module.scss'
-import { useEffect, useRef, useState } from 'react'
-import { useScene } from './indexHook'
-import { CustomScene } from '../../three-utils/model-sdk/index'
 
 const Editor = () => {
     const navigate = useNavigate()

@@ -75,7 +75,9 @@
     "start": "node scripts/start.js",
     "prestart": "node ./_check_env.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "lint:eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src --fix",
+    "lint:prettier": "prettier -c --write **/* --cache"
   },
   "eslintConfig": {
     "extends": [
@@ -147,12 +149,14 @@
     "resetMocks": true
   },
   "devDependencies": {
+    "@babel/eslint-plugin": "^7.19.1",
     "@babel/plugin-transform-modules-commonjs": "^7.21.2",
     "autoprefixer": "^10.4.14",
     "babel-core": "^6.26.3",
     "colors": "^1.4.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-compat": "^4.1.4",
     "eslint-plugin-prettier": "^4.2.1",
     "node-version": "^3.0.0",
     "postcss": "^8.4.21",

@@ -170,7 +170,6 @@ export class CustomScene {
         this.render.outputEncoding = THREE.sRGBEncoding
         this.render.render(this.scene, camera ? camera : this.camera)
     }
-
     /**
      * 更新回调
      * @param callback 回调函数
