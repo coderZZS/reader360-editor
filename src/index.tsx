@@ -6,6 +6,7 @@ import microApp from '@micro-zoe/micro-app'
 import './index.css'
 import 'antd/dist/reset.css'
 import 'tailwindcss/tailwind.css'
+import './style/resets/video.scss'
 
 microApp.start()
 
